@@ -1,10 +1,9 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .header{
     display: flex;
     justify-content: space-between;
@@ -22,7 +21,6 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* padding: 10px; */
     padding: 5px 80px 5px 80px;
     background-color: #ffffff;
     color: white;
@@ -50,22 +48,14 @@
     background-color: #575757;
     border-radius: 5px;
 }
-
 .nav-right i {
     font-size: 30px;
 }
-
 #enquiry-btn{
-    /* width: 150px; */
     color: red;
     text-align: center;
     border: 2px solid red;
 }
-
-
-
-
-/* Modal (Enquiry Form) Styling */
 .modal {
     display: none;
     position: fixed;
@@ -104,18 +94,14 @@
     color: black;
     text-decoration: none;
 }
-
-/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
 }
-
 label {
     margin-bottom: 5px;
     font-size: 16px;
 }
-
 input, textarea {
     margin-bottom: 15px;
     padding: 10px;
@@ -123,12 +109,10 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 textarea {
     resize: vertical;
     height: 100px;
 }
-
 button {
     padding: 10px;
     background-color: white;
@@ -137,12 +121,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #45a049;
 }
-/* Basic reset */
-
 .aboutUs{
     color: red;
     font-size: 50px;
@@ -157,11 +138,9 @@ button:hover {
     font-size: 25px;
     line-height: 30px;
 }
-
 .first{
     padding-left: 150px;
-    margin-left: 50px;
-
+  margin-left: 50px;
 }
 .third{
     display: flex;
@@ -171,77 +150,20 @@ button:hover {
     width: 100px;
     background-color: wheat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Basic reset */
-
-
-/* Slider Container */
 .slider-container {
     position: relative;
     width: 100%;
     height: 650px;
-    /* background-color: #45a049; */
-    /* max-width: 800px; */
-    /* overflow: hidden; */
-
-    /* position: relative;
-    width: 100%; /* Make the container full-width */
-    /* max-width: 100%; Ensure the container width doesn't exceed the screen size */
-    /* overflow: hidden; */ 
 }
-
-/* Image Slider */
 .slider {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     transition: transform 0.5s ease-in-out;
-    /* background-color: yellow; */
     width: 100%;
 }
-
 .slide {
     width: 100% ;
     height: 650px;
-    /* width: 100vw; Use the viewport width for the image */
-    /* height: 100vh; Make the image height fill the screen (you can adjust this as per your requirement) */
-    /* object-fit: cover; */
-
 }
-
-/* Arrow buttons */
 .arrow {
     position: absolute;
     top: 50%;
@@ -254,54 +176,41 @@ button:hover {
     cursor: pointer;
     z-index: 100;
 }
-
 .left {
     left: 10px;
 }
-
 .right {
     right: 10px;
 }
-
-/* Arrow button hover effect */
 .arrow:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
-
-
-
 .maindiv {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     width: 100%;
 }
-
 .first {
     flex: 1; 
     padding: 20px;
     background-color: #f8f8f8;
 }
 
-/* Second Div (Image Section) */
 .second {
-    flex: 1; /* Take half the space */
+    flex: 1; 
     padding: 20px;
     margin-right: -20px;
 }
-
 .second img {
-    width: 100%; /* Make the image take up full width */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%; 
+    height: 500px; 
     border-radius: 10px;
 }
 
-/* Third Div (Statistics Section) */
 .third {
     position: absolute ;
-    bottom: 10px; /* Push it below the first and second div */
-    /* left: 0; */
+    bottom: 10px; 
     width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -310,29 +219,20 @@ button:hover {
     color: rgb(0, 42, 120);
     border-radius: 0 50px 0 0px;
     margin-left:70px;
-    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
 }
-
 .third div {
     text-align: center;
 }
-
 .third h1 {
     font-size: 30px;
     font-weight: bold;
 }
-
 .third p {
     font-size: 18px;
 }
-
-/* .maindiv{
-    margin-left: 50px;
-} */
 .second img{
     border-radius: 100px 0 0 0;
 }
-
 .property{
     margin: 50px 50px 10px 50px;
 }
@@ -342,21 +242,17 @@ button:hover {
 }
 .propertyp{
     font-size: 20px;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 .cities a{
     padding: 10px;
     text-decoration: none;
     color: blue;
 }
-
 #banglore{
     color: red;
     margin-left: -10px;
 }
-
-
 .images{
     display: grid;
     margin: 50px;
@@ -365,9 +261,12 @@ button:hover {
 .images div{
     margin-bottom: 20px;
 }
-
 .firstimage{
     position:relative;
+}
+.firstimage img{
+    width: 94%;
+    height: 500px;
 }
 .textarea{
     position: absolute;
@@ -381,14 +280,12 @@ button:hover {
     justify-content: center;
     padding: 10px;
 }
-
 .view a {
    color: red;
    border: 2px solid red;
    text-decoration: none;
    font-size: 20px;
    padding: 5px;
-   /* width: 100%; */
 }
 .view{
     display: flex;
@@ -396,13 +293,11 @@ button:hover {
     align-items: center;
     margin-top: -30px;
 }
-
 .Why h1{
     color: red;
     font-size: 25px;
     margin-left: 100px;
 }
-
 .icons{
     height: 200px;
     width: 350px;
@@ -413,7 +308,6 @@ button:hover {
     padding :15px;
     margin:5px;
 }
-
 .firstdiv{
     display: flex;
     justify-content: center;
@@ -453,51 +347,33 @@ button:hover {
 .lastimg:hover{
     transform: translateY(-15px);
 opacity: 0.5;
-    }
+}
 
+.slider-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
 
-
-
-
-
-
-
-
-
-
-
-      .slider-container {
-        position: relative;
-        width: 600px;
-        height: 400px;
-      }
-      
-      .slider-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: opacity 0.5s ease-in-out;
-      }
-
-
-
-
-
-      .slider-container {
-        position: relative;
-        width: 100vw; /* Full width of the viewport */
-        height: 100vh; /* Full height of the viewport */
-      }
-      
-      .slider-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensure the image covers the full area without distortion */
-        transition: opacity 1s ease-in-out; /* Smooth transition when switching images */
-      }
-      
-      .arrow {
-        position: absolute;
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+.slider-container {
+  position: relative;
+  width: 100vw; 
+  height: 100vh; 
+}
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: opacity 1s ease-in-out; 
+}
+.arrow {
+  position: absolute;
         top: 50%;
         transform: translateY(-50%);
         font-size: 30px;
@@ -516,23 +392,18 @@ opacity: 0.5;
       .right {
         right: 10px;
       }
-      
-
+    
       .overlay1 {
         position: absolute;
         top: 50%;
         left: 20%;
         transform: translate(-50%, -50%);
-        /* text-align: center; */
         color: black;
-        background-color: rgb(255, 255, 255); /* Semi-transparent white background */
-        /* padding: 20px; */
-        width: 25%; /* Width of the overlay */
+        background-color: rgb(255, 255, 255);
+        width: 25%; 
       }
       .overlay1 h2{
         padding: 5px 20px 5px 20px ;
-        /* padding-left: 20px;
-        padding-right: 20px; */
       }
       .overlay1 p{
         padding: 5px 20px 5px 20px ;
@@ -546,110 +417,50 @@ opacity: 0.5;
       }
       .viewd{
         color: white;
-        /* width: 400px; */
         width: 100%;
         background-color: red;
         border-radius:0;
         margin-top: 20px;
-        /* padding-top: 30px; */
-
       }
-
-
       .viewd:hover{
         color: black;
         background-color: white;
       }
-
-
-
-
 .partners{
     color: red;
     padding: 50px;
     margin-left: 50px;
-}
-
-
-  
-  /* .carousel-container {
-    position: relative;
-    width: 80vw;
-    overflow: hidden; 
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .carousel img {
-    width: 10%; 
-    object-fit: cover;
-    border-radius: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
-  } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Global Styles */
-
-  
+} 
   .carousel-container {
     position: relative;
-    width: 80vw; /* Adjust the width to control the visible area */
-    overflow: hidden; /* Hide the overflowing images */
+    width: 80vw; 
+    overflow: hidden; 
   }
-  
   .carousel {
     display: flex;
     transition: transform 0.5s ease;
   }
-  
   .carousel img {
-    width: 25%; /* Each image takes up 25% of the container width */
+    width: 25%; 
     object-fit: cover;
     border-radius: 10px;
   }
-  
-  
-
-
-
-
-
-
-
-
-
-
-
 .main1 {
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
+    display: grid;
+grid-template-columns: 1fr 1fr;
     height: 100vh;  
     padding: 50px 100px 50px 100px ;    
 }
-
 .map-container {
     display: flex;                  
     justify-content:flex-end;
     align-items: center;
 
 }
-
+.map-container iframe{
+    width: 600px;
+    height: 650px;
+} 
 .modal-container1 {
     flex: 1;                
     padding: 20px;            
@@ -659,13 +470,11 @@ opacity: 0.5;
     text-align: right;
 
 }
-
 .modal-content1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .modal-content1 h2{
     color: white;
     width: 100%;
@@ -682,8 +491,6 @@ opacity: 0.5;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-
 #enquiry-form1 {
     width: 100%;
 
@@ -706,20 +513,16 @@ textarea::placeholder {
     color: white;
     opacity: 1; 
 }
-
-
 .modal-content1 button{
     background-color: white;
     color: red;
 }
-
 .main12{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 50px;
     padding-top: 20px;
 }
-
 .main12 div{
     padding: 50px;
 }
@@ -730,7 +533,6 @@ textarea::placeholder {
     padding: 20px 0 20px 0 ;
     color: #001b94;
 }
-
 .main12 div h4{
 
     color: #001b94;
@@ -744,64 +546,288 @@ textarea::placeholder {
    color: black;
    color: #001b94;
 }
-
 .webstories{
  color: red;
  padding: 50px;
 
 }
-
-
-
 .video-container {
     display: flex;
     justify-content: space-around;
     width: 85%;
     margin-left: 5%;
 }
-
 .video {
-    width: 24%;  /* Adjust width for four videos */
-    height: auto; /* Maintain aspect ratio */
+    width: 24%;  
+    height: auto; 
     object-fit: cover;
     padding-left: 5%;
     transition: transform 0.3s ease;
     border-radius: 10px;
 }
-
-/* Hover effect to play videos */
 .video:hover {
-    transform: scale(1.05); /* Slightly enlarge the video when hovered */
+    transform: scale(1.05); 
 }
-
 
 .iconfont{
 
     color: white;
-}
-
-
-  
+} 
   .scroll-container {
     width: 100%;
     overflow: hidden;
     position: relative;
-  }
-  
+  } 
   .image-wrapper {
     display: flex;
     transition: transform 0.5s ease;
     padding-left: 25px;
     padding-right: 25px;
 
-  }
-
-  
+  } 
   .scroll-image {
-    width: 25%; /* Make each image take up 25% of the container width (4 visible images) */
+    width: 25%; 
     object-fit: cover;
     height: 300px;
     padding: 90px;
   }
   
-  
+
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #001b94;
+}
+
+
+  @media (max-width: 768px) {
+    .header, .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar .nav-left a {
+        font-size: 16px;
+    }
+
+    .slider-container {
+        height: 500px;
+        width: 100%;
+    }
+
+    .slider-image {
+        height: 100%;
+    }
+
+    .maindiv {
+        flex-direction: column;
+    }
+
+    .first, .second {
+        flex: 1 0 100%;
+    }
+
+    .third {
+        align-items: center;
+    }
+
+
+    
+.third {
+    bottom: 20px; 
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    background-color: #eedbdb;
+    color: rgb(0, 42, 120);
+    border-radius: 0 50px 0 0px;
+    margin-left: 20px;
+}
+.third div {
+    text-align: center;
+}
+.third h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.third p {
+    font-size: 10px;
+}
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .carousel img {
+        width: 100%;
+    }
+
+    .view a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .video-container {
+        display: block;
+        width: 100%;
+    }
+
+    .video {
+        width: 50%;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .overlay1 {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        color: black;
+        background-color: rgb(255, 255, 255);
+        width: 45%; 
+      }
+      
+    
+      .nav-left {
+        display: none; /* Hide links initially */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-left a {
+        font-size: 20px;
+        color: #001b94;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+         /* Show hamburger icon */
+    }
+
+    .nav-left.active {
+        display: flex; /* Show links when active */
+    }
+    .second img {
+        width: 90%; 
+        height: 400px; 
+        border-radius: 10px;
+    }
+
+    .firstdiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .seconddiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .icons{
+        height: 200px;
+        width: 300px;
+        margin: 25px;
+    }
+
+
+    .lastclass{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .image-wrapper {
+        display: flex;
+        transition: transform 0.5s ease;
+        padding-left: 0px;
+        padding-right: 0px;
+    
+      } 
+
+      .scroll-container {
+        width: 100%;
+        /* overflow: hidden; */
+        position: relative;
+      } 
+      .scroll-image {
+        object-fit: cover;
+        height: 100px;
+        padding: 10px;
+      }
+
+      .main1 {
+        display: grid;
+    grid-template-columns: 1fr;
+        height: 100vh;  
+        padding: 0px 10px 0px 10px ;    
+    }
+
+    .map-container iframe{
+        width: 100%;
+        height: 350px;
+    } 
+
+    .main12{
+        display: grid;
+        grid-template-columns: 1fr ;
+        /* padding: 50px; */
+        margin-top:100px ;
+        /* padding-top: 20px; */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header, .navbar {
+        padding: 10px;
+    }
+
+    .nav-left a {
+        font-size: 14px;
+    }
+
+    .propertyh1 {
+        font-size: 22px;
+    }
+
+    .propertyp {
+        font-size: 18px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    .firstimage .textarea {
+        font-size: 14px;
+    }
+}

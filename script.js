@@ -23,146 +23,18 @@ document.getElementById("enquiry-form").onsubmit = function(event) {
     modal.style.display = "none"; // Close the modal after form submission
 };
 
-// // Select elements
-// const slider = document.querySelector('.slider');
-// const slides = document.querySelectorAll('.slide');
-// // const leftArrow = document.getElementById('left-arrow');
-// // const rightArrow = document.getElementById('right-arrow');
 
-// let currentIndex = 0; // Start from the first image
+// const hamburger = document.getElementById('hamburger-icon');
+// const navLinks = document.getElementById('nav-links');
 
-// // Function to move to the next slide
-// function goToSlide(index) {
-//     // Ensure index is within bounds
-//     if (index >= slides.length) {
-//         currentIndex = 0; // Go back to the first image
-//     } else if (index < 0) {
-//         currentIndex = slides.length - 1; // Go to the last image
-//     } else {
-//         currentIndex = index;
-//     }
-    
-//     // Adjust slider position
-//     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-// }
-
-// // Function for automatic slide change every 4 seconds
-// function autoSlide() {
-//     setInterval(() => {
-//         goToSlide(currentIndex + 1);
-//     }, 4000); // Change slide every 4 seconds
-// }
-
-// // Event listeners for the left and right arrows
-// leftArrow.addEventListener('click', () => goToSlide(currentIndex - 1));
-// rightArrow.addEventListener('click', () => goToSlide(currentIndex + 1));
-
-// // Start the automatic sliding
-// // autoSlide();
-
-
-
-
-
-
-
-// let currentImageIndex = 0;
-// const images = [
-//   '/Images/aspen_leaf.webp',
-//   './Images/Night.webp',
-//   './Images/perspective view01.webp',
-//   './Images/villa-ourServices.webp',
-//   './Images/villament-ourServices.webp',
-// ];
-
-// const sliderImg = document.getElementById('slider-img');
-// const leftArrow = document.getElementById('left-arrow');
-// const rightArrow = document.getElementById('right-arrow');
-
-// // Function to update the image based on the index
-// function updateImage() {
-//   sliderImg.src = images[currentImageIndex];
-// }
-
-// // Function to go to the next image
-// rightArrow.addEventListener('click', () => {
-//   currentImageIndex = (currentImageIndex + 1) % images.length;
-//   updateImage();
+// // Toggle the "active" class on nav-links when hamburger icon is clicked
+// hamburger.addEventListener('click', () => {
+//     navLinks.classList.toggle('active');
 // });
-
-// // Function to go to the previous image
-// leftArrow.addEventListener('click', () => {
-//   currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-//   updateImage();
-// });
-
-// // Initialize the first image
-// updateImage();
-
-
-
-
-
-
-
-
-
-
-
-// let currentImageIndex = 0;
-// const images = [
-//   '/Images/aspen_leaf.webp',
-//   './Images/Night.webp',
-//   './Images/perspective view01.webp',
-//   './Images/villa-ourServices.webp',
-//   './Images/villament-ourServices.webp',
-// ];
-// const sliderImg = document.getElementById('slider-img');
-// const leftArrow = document.getElementById('left-arrow');
-// const rightArrow = document.getElementById('right-arrow');
-
-// // Function to update the image based on the index
-// function updateImage() {
-//   sliderImg.src = images[currentImageIndex];
-// }
-
-// // Function to go to the next image
-// rightArrow.addEventListener('click', () => {
-//   currentImageIndex = (currentImageIndex + 1) % images.length;
-//   updateImage();
-// });
-
-// // Function to go to the previous image
-// leftArrow.addEventListener('click', () => {
-//   currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-//   updateImage();
-// });
-
-// // Automatically change the image every 4 seconds
-// setInterval(() => {
-//   currentImageIndex = (currentImageIndex + 1) % images.length;
-//   updateImage();
-// }, 4000); // 4000 milliseconds = 4 seconds
-
-// // Initialize the first image
-// updateImage();
-
-
-
-
-
-
-
-
-
-
 
 
 
 let currentImageIndex = 0;
-
-
-
 
 const images = [
   {
@@ -227,86 +99,18 @@ rightArrow.addEventListener('click', () => {
 
 // Function to go to the previous image
 leftArrow.addEventListener('click', () => {
-  currentImageIndex = (currentImageIndex - 1 + images1.length) % images1.length;
+  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
   updateImage();
 });
 
 // Automatically change the image every 4 seconds
 setInterval(() => {
-  currentImageIndex = (currentImageIndex + 1) % images1.length;
+  currentImageIndex = (currentImageIndex + 1) % images.length;
   updateImage();
 }, 4000); // 4000 milliseconds = 4 seconds
 
 // Initialize the first image and text
 updateImage();
-
-
-
-
-
-
-
-
-let currentIndex = 0;
-let isDragging = false;
-let startX;
-let scrollStartX;
-const images1 = document.querySelectorAll('.carousel img');
-const totalImages = images1.length;
-const carousel = document.getElementById('carousel');
-const carouselContainer = document.getElementById('carousel-container');
-
-// Function to update the carousel position
-function updateCarousel() {
-  carousel.style.transform = `translateX(-${currentIndex * 25}%)`;
-}
-
-// Handle mouse down event (begin dragging)
-carouselContainer.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startX = e.pageX; // Store the position when mouse is pressed
-  scrollStartX = carousel.offsetLeft; // Store current position of carousel
-  carousel.style.transition = 'none'; // Disable smooth transition during drag
-});
-
-// Handle mouse move event (during dragging)
-carouselContainer.addEventListener('mousemove', (e) => {
-  if (!isDragging) return; // If not dragging, do nothing
-
-  const x = e.pageX; // Get the current mouse position
-  const walk = (x - startX) * 1; // Calculate how far the mouse has moved
-  carousel.style.transform = `translateX(${scrollStartX + walk}px)`; // Apply the movement
-});
-
-// Handle mouse up event (end dragging)
-carouselContainer.addEventListener('mouseup', () => {
-  isDragging = false;
-
-  const maxScroll = (totalImages - 4) * 25; // Maximum scroll value
-  let newIndex = Math.round(carousel.offsetLeft / -carousel.offsetWidth); // Round the index to the nearest whole number
-
-  // Boundaries to keep the scrolling within the first and last image
-  if (newIndex < 0) newIndex = 0;
-  if (newIndex > totalImages - 4) newIndex = totalImages - 4;
-
-  currentIndex = newIndex;
-  updateCarousel();
-});
-
-// Automatically scroll the carousel to the left slowly when no mouse drag
-function autoScroll() {
-  if (!isDragging) {
-    currentIndex = (currentIndex === totalImages - 4) ? 0 : currentIndex + 1; // Move right, loop to start
-    updateCarousel();
-  }
-}
-
-// Set an interval to auto-scroll the images slowly
-setInterval(autoScroll, 50); // Scroll every 50 milliseconds for a smooth effect
-
-
-
-
 
 
 const scrollContainer = document.querySelector('.scroll-container');
@@ -333,11 +137,11 @@ scrollContainer.addEventListener('mousemove', (e) => {
   if (!isMouseDown) return;
   e.preventDefault();
   const x = e.pageX - scrollContainer.offsetLeft;
-  const walk = (x - startX1) * 2; // The number 2 controls the drag speed
+  const walk = (x - startX1) * 2; 
   imageWrapper.style.transform = `translateX(${scrollLeft - walk}px)`;
 });
 
-// Automatic scrolling (right to left)
+
 let scrollInterval = setInterval(() => {
   let scrollWidth = imageWrapper.scrollWidth - scrollContainer.offsetWidth;
   if (imageWrapper.scrollLeft >= scrollWidth) {
