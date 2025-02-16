@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Enquiry Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="iconfont">
+            
+            <i class="fas fa-phone"></i>
+            <a href="#">+11 1234567890</a>
+        </div>
+    <div class="iconfont">
+        <i class="fas fa-comment-dots"></i>
+        <a href="#">srivengroups@gmail.com</a>
+    </div>
+        
+        
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-right">
+                <img src="./Images/web logo (1).webp" width="150px" alt="">
+            </div>
+            <div class="nav-left">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Properties</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact Us</a>
+                <a href="#" id="enquiry-btn">Enquire Now</a>   
+            </div>
+            
+        </nav>
+    </header>
+
+    <div id="enquiry-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-btn" class="close">&times;</span>
+            <h2 class="en">Enquiry Form</h2>
+            <form id="enquiry-form">
+                <input type="text" id="name" name="name" placeholder="Enter your Name:" required>
+                <input type="text" id="phone" name="phone" placeholder="Phone No:" required>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required> 
+                <textarea id="looking-for" name="looking-for" placeholder="What are you looking for?" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+<!-- 
+    <div class="slider-container">
+
+        <button class="arrow left" id="left-arrow">&#10094;</button>
+        
+        <div class="slider">
+            <img src="./Images/aspen_leaf.webp" alt="Image 1"  class="slide"  >
+             <img src="./Images/Night.webp" alt="Image 2" class="slide" >
+             <img src="./Images/perspective view01.webp" alt="Image 3" class="slide" >
+            <img src="./Images/villa-ourServices.webp" alt="Image 4" class="slide" >
+            <img src="./Images/villament-ourServices.webp" alt="Image 5" class="slide" >
+        </div>
+
+        <button class="arrow right" id="right-arrow">&#10095;</button>
+    </div> -->
+
+
+    <div class="slider-container">
+    <button class="arrow left" id="left-arrow">&#10094;</button>
+    <div class="overlay1">
+        <h2 id="image-title">The Belvedere By UKN</h2>
+        <hr>
+        <p >Configuration:</p>
+        <h3 id="image-subtitle">3 BHK apartments</h3>
+        <hr>
+        <p>Address:</p>
+        <h3 id="image-description">Navarthna Agrahara, North banglore</h3>
+        <button class="viewd">View Details</button>
+      </div>
+    <img src="/Images/aspen_leaf.webp" alt="Image 1" class="slider-image" id="slider-img">
+    <button class="arrow right" id="right-arrow">&#10095;</button>
+  </div>
+
+
+    <div class="maindiv">
+        <div class="first">
+            <h1 class="aboutUs">About Us</h1>
+            <p class="para1">With over 10+ years of experience, Sriven Groups is your reliable real estate partner in Bangalore, offering high-quality, customized services through our Channel partners. Explore our Apartment Showcase, premium land parcels for your dream home, and breathtaking villas.
+                </p>
+                
+                <p class="para2">
+                We provide superior homes at competitive prices and have earned multiple industry awards for quality and client satisfaction. As pioneers in real estate development, we aim to integrate eco-friendly and smart home solutions, setting new standards of excellence. Experience unparalleled value and exceptional service with making your vision of the perfect property a reality.</p>
+        </div>
+        <div class="second">
+            <img src="./Images/aboutUs-srivengroups.webp" height="50px" alt="">
+        </div>
+        <div class="third">
+            <div>
+                <h1>1.0</h1>
+                <p>Million Sq Ft Area Sold</p>
+            </div>
+            <div>
+                <h1>800+</h1>
+                <p>Apartments Sold</p>
+            </div>
+            <div>
+                <h1>10+</h1>
+                <p>Years Of Experience</p>
+            </div>
+        </div>
+    </div>
+
+<div class="webstories">
+    <h1>Web Stories</h1>
+</div>
+
+        <div class="video-container">
+            <video class="video" src="./Videos/about-srivengroups.webm" autoplay muted loop></video>
+            <video class="video" src="./Videos/ds-max-spoorthi.webm" autoplay muted loop></video>
+            <video class="video" src="./Videos/sahara-grand.webm" autoplay muted loop></video>
+            <video class="video" src="./Videos/vsr-marvella.webm" autoplay muted loop></video>
+        </div>
+    
+
+    <div>
+        <div class="property">
+            <h1 class="propertyh1">Property Listings</h1>
+            <p class="propertyp">
+                Discover a variety of housing options in Bangalore with Sriven Groups property listings. Choose from villas, villaments, apartments, and individual houses, all meticulously curated to suit your lifestyle needs. Find your ideal home today with ease and convenience through our online platform.
+            </p>
+            <div class="cities">
+                <a href="#" id="banglore">
+                    BANGALORE:
+                </a>
+                <a href="#">
+                    Begur
+                </a>
+                <a href="#">
+                    JP Nagar
+                </a>
+                <a href="#">
+                    Sarjapur
+                </a>
+                <a href="#">
+                    RR Nagar
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="images">
+        <div class="firstimage"><img src="./Images/image1.webp" width="667px" height="500px" alt="">
+            <div class="textarea">
+                <h3>Suraksha Springs</h3>
+                <p>At Begur Main Road , Off Bannerghatta Road</p>
+            </div>
+        
+        </div>
+        <div class="firstimage"><img src="./Images/image3.webp" width="667px" height="500px" alt="">
+            <div class="textarea">
+                <h3> Navami landmaark</h3>
+                <p>
+                    Kenchenhalli , Rajarajeshari Nagar
+                </p>
+            </div>
+          </div>
+        <div class="firstimage"><img src="./Images/image2.webp" width="667px" height="500px" alt="">
+            <div class="textarea">
+                <h3> The belvedere by UKM</h3>
+                <p>
+                    Navarathna Agrahrara, North Bangalore
+                </p>
+            </div></div>
+        <div class="firstimage"><img src="./Images/image4.webp" width="667px" height="500px" alt="">
+            <div class="textarea">
+                <h3> VSR Aspen Leaf</h3>
+                <p>
+                    Kasavanahalli , Sarjapur
+                </p>
+            </div></div>
+            
+    </div>
+    <div class="view">
+        <a href="#">View More Properties</a>
+    </div>
+    <div class="Why">
+        <h1>Why Choose Us?</h1>
+    </div>
+    <div>
+        <div class="firstdiv">
+            <div class="icons">
+                <img src="./Images/icon1.png" width="50px" height="50px" alt="">
+                <h2>Unmatched Experience</h2>
+                <p>With over 10+ years of expertise, Sriven Groups delivers each project with unmatched skill and a commitment to the highest standards of quality.</p>
+            </div>
+            <div class="icons">
+                <img src="./Images/icon2.png" width="50px" height="50px" alt="">
+                <h2>Trusted Brand</h2>
+                <p>Sriven Groups is a well-respected brand known for integrity, ethical practices, and consistently delivering outstanding projects.</p> 
+            </div>
+            <div class="icons">
+                <img src="./Images/icon3.png" width="50px" height="50px" alt="">
+                <h2>Comprehensive Support</h2>
+                <p>We offer full assistance from initial consultation to post-purchase, ensuring a smooth, stress-free experience with our dedicated support team.</p>
+            </div>
+        </div>
+        <div class="seconddiv">
+        <div class="icons">
+            <img src="./Images/icon4.png" width="50px" height="50px" alt="">
+            <h2>Competitive Pricing</h2>
+            <p>Our competitive pricing strategy makes luxury living accessible, ensuring you get the most value for your investment.</p>
+           
+        </div>
+        <div class="icons">
+            <img src="./Images/icon5.png" width="50px" height="50px" alt="">
+            <h2>Exceptional Service</h2>
+           <p>We provide personalized care and tailored solutions, with a dedicated team always available to answer your questions and offer support.
+
+           </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="our">  
+       <h1>Our services</h1>
+    </div>
+
+<div class="lastclass">
+    <div class="lastimg">
+        <img src="./Images/slide1.webp" width="250px" height="400px" alt="">
+        <div class="last">
+            <h1>Apartments</h1>
+            <p>Looking for modern living spaces in Bangalore? Explore our meticulously designed apartments for comfort and style.</p>
+        </div>
+        
+    </div>
+    <div class="lastimg">
+        
+        <img src="./Images/slide2.webp" width="250px" height="400px" alt="">
+        <div class="last">
+            <h1>Villas</h1>
+            <p>Get stumbled with the Craftsmanship that is crafted with comfort of elegance in our Villas find in premium locations</p>
+        </div>
+        
+    </div>
+    <div class="lastimg">
+        <img src="./Images/slide3.webp" width="250px" height="400px" alt="">
+        <div class="last">
+            <h1>Villaments</h1>
+            <p>
+                Interested in a blend of villa-style luxury and apartment convenience? Explore our villaments for the best of both worlds.
+            </p>
+        </div>
+        
+    </div>
+    <div class="lastimg">
+        <img src="./Images/slide4.webp" width="250px" height="400px" alt="">
+        
+        <div class="last">
+            <h1>Plots</h1>
+            <p>
+                Find Plots in Booming location tailored to your preferences for creating a dream future
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+
+<div>
+    <h1 class="partners">
+        Our Partners
+    </h1>
+</div>
+
+<!-- <div class="carousel-container" id="carousel-container">
+    <div class="carousel" id="carousel">
+      <img src="./Images/1.webp" alt="Image 1">
+      <img src="./Images/2.webp" alt="Image 2">
+      <img src="./Images/3.webp" alt="Image 3">
+      <img src="./Images/4.webp" alt="Image 4">
+      <img src="./Images/5.webp" alt="Image 5">
+      <img src="./Images/6.webp" alt="Image 6">
+      <img src="./Images/7.webp" alt="Image 7">
+      <img src="./Images/1.webp" alt="Image 8">
+      <img src="./Images/4.webp" alt="Image 9">
+      <img src="./Images/5.webp" alt="Image 10">
+    </div>
+  </div> -->
+
+
+  <div class="scroll-container">
+    <div class="image-wrapper">
+      <img src="./Images/1.webp" alt="Image 1" class="scroll-image">
+      <img src="./Images/2.webp" alt="Image 2" class="scroll-image">
+      <img src="./Images/3.webp" alt="Image 3" class="scroll-image">
+      <img src="./Images/4.webp" alt="Image 4" class="scroll-image">
+      <img src="./Images/5.webp" alt="Image 5" class="scroll-image">
+      <img src="./Images/6.webp" alt="Image 6" class="scroll-image">
+      <img src="./Images/3.webp" alt="Image 7" class="scroll-image">
+      <img src="./Images/2.webp" alt="Image 8" class="scroll-image">
+      <img src="./Images/6.webp" alt="Image 9" class="scroll-image">
+      <img src="./Images/4.webp" alt="Image 10" class="scroll-image">
+    </div>
+  </div>
+
+  <!-- <div class="main">
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31109.318303282886!2d77.56651245797198!3d12.9292533169231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15986765d7d9%3A0xbba2fea7014e5087!2sJayanagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1739639551252!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+        <div id="enquiry-modal1" class="modal1">
+            <div class="modal-content1">
+                <h2>Reach Us</h2>
+                <p>We will be happy to assist you</p>
+                <form id="enquiry-form">
+                    <input type="text" id="name" name="name" placeholder="Enter your Name:" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone No:" required>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required> 
+                    <textarea id="looking-for" name="looking-for" placeholder="What are you looking for?" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div> 
+
+  </div> -->
+
+
+
+  <div class="main1">
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31109.318303282886!2d77.56651245797198!3d12.9292533169231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15986765d7d9%3A0xbba2fea7014e5087!2sJayanagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1739639551252!5m2!1sen!2sin" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div id="enquiry-modal1" class="modal-container1">
+        <div class="modal-content1">
+            <h2>Reach Us</h2>
+            <p>We will be happy to assist you</p>
+            <form id="enquiry-form1">
+                <input type="text" id="name1" name="name1" placeholder="Enter your Name:" required>
+                <input type="text" id="phone1" name="phone1" placeholder="Phone No:" required>
+                <input type="email" id="email1" name="email1" placeholder="Enter Your Email" required> 
+                <textarea id="looking-for1" name="looking-for1" placeholder="What are you looking for?" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div> 
+</div>
+
+<div class="main12">
+    <div>
+        <h3>
+            About Sriven Groups
+        </h3>
+        <p>Sriven Groups is a trusted name in real estate, delivering high-quality homes, innovative designs, and unparalleled customer satisfaction for a variety of living styles and preferences.</p>
+    </div>
+    <div>
+        <h3>Contact Us</h3>
+        <h4>Email</h4>
+
+        <p> info@srivengroups.com</p>
+        <hr>
+        <h4>Call Us</h4>
+
+        <p>  +91 9036053618</p>
+    </div>
+    <div  class="finallinks">
+        <h3>
+            Links
+        </h3>
+        <a href="#">Home </a>
+        <a href="#">About Us</a>
+        <a href="#">Property Listings</a>
+        <a href="#">Our services</a>
+        <a href="#">Our Partners</a>
+    </div>
+    <div>
+        <h3>Help</h3>
+        <p>Privacy</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

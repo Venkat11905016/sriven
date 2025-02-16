@@ -1,0 +1,807 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(0, 50, 126);
+    padding: 5px 90px 5px 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+.header a{
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    padding: 5px 80px 5px 80px;
+    background-color: #ffffff;
+    color: white;
+    position: fixed;
+    top: 28px;
+    left: 0;
+    right: 0;
+    z-index: 999; 
+}
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: rgb(0, 50, 126);
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav-left a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.nav-right i {
+    font-size: 30px;
+}
+
+#enquiry-btn{
+    /* width: 150px; */
+    color: red;
+    text-align: center;
+    border: 2px solid red;
+}
+
+
+
+
+/* Modal (Enquiry Form) Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #001b94;;
+    padding: 20px;
+    margin: 10% auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.en{
+    background-color: #001b94;;
+    color: white;
+    width: 100%;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Basic reset */
+
+.aboutUs{
+    color: red;
+    font-size: 50px;
+}
+
+.para1{
+    padding-top: 30px;
+    font-size: 25px;
+    line-height: 30px;
+}
+.para2{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.first{
+    padding-left: 150px;
+    margin-left: 50px;
+
+}
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100px;
+    background-color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Basic reset */
+
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    /* background-color: #45a049; */
+    /* max-width: 800px; */
+    /* overflow: hidden; */
+
+    /* position: relative;
+    width: 100%; /* Make the container full-width */
+    /* max-width: 100%; Ensure the container width doesn't exceed the screen size */
+    /* overflow: hidden; */ 
+}
+
+/* Image Slider */
+.slider {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    transition: transform 0.5s ease-in-out;
+    /* background-color: yellow; */
+    width: 100%;
+}
+
+.slide {
+    width: 100% ;
+    height: 650px;
+    /* width: 100vw; Use the viewport width for the image */
+    /* height: 100vh; Make the image height fill the screen (you can adjust this as per your requirement) */
+    /* object-fit: cover; */
+
+}
+
+/* Arrow buttons */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+/* Arrow button hover effect */
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+.maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.first {
+    flex: 1; 
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Second Div (Image Section) */
+.second {
+    flex: 1; /* Take half the space */
+    padding: 20px;
+    margin-right: -20px;
+}
+
+.second img {
+    width: 100%; /* Make the image take up full width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+}
+
+/* Third Div (Statistics Section) */
+.third {
+    position: absolute ;
+    bottom: 10px; /* Push it below the first and second div */
+    /* left: 0; */
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #eedbdb;
+    color: rgb(0, 42, 120);
+    border-radius: 0 50px 0 0px;
+    margin-left:70px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.third div {
+    text-align: center;
+}
+
+.third h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.third p {
+    font-size: 18px;
+}
+
+/* .maindiv{
+    margin-left: 50px;
+} */
+.second img{
+    border-radius: 100px 0 0 0;
+}
+
+.property{
+    margin: 50px 50px 10px 50px;
+}
+.propertyh1{
+  color: red;
+  margin-bottom: 10px;
+}
+.propertyp{
+    font-size: 20px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    margin-bottom: 10px;
+}
+.cities a{
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+#banglore{
+    color: red;
+    margin-left: -10px;
+}
+
+
+.images{
+    display: grid;
+    margin: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+.images div{
+    margin-bottom: 20px;
+}
+
+.firstimage{
+    position:relative;
+}
+.textarea{
+    position: absolute;
+    bottom: -20px;
+    width: 94%;
+    height: 70px;
+    color: white;
+    background-color: rgb(0, 0, 128);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.view a {
+   color: red;
+   border: 2px solid red;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 5px;
+   /* width: 100%; */
+}
+.view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.Why h1{
+    color: red;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.icons{
+    height: 200px;
+    width: 350px;
+    border-left: 1px solid black; 
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    padding :15px;
+    margin:5px;
+}
+
+.firstdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seconddiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our h1{
+    color: red;
+    margin-left:70px ;
+    padding: 10px;
+}
+.lastclass{
+    display: flex;
+    justify-content: center;
+}
+.lastimg{
+    position: relative;
+    margin: 10px;
+}
+.last{
+    position: absolute;
+    bottom: 0px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    
+}
+.last h1{
+    color: white;
+}
+.last  p{
+    color: white;
+}
+.lastimg:hover{
+    transform: translateY(-15px);
+opacity: 0.5;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+      .slider-container {
+        position: relative;
+        width: 600px;
+        height: 400px;
+      }
+      
+      .slider-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+
+
+
+
+      .slider-container {
+        position: relative;
+        width: 100vw; /* Full width of the viewport */
+        height: 100vh; /* Full height of the viewport */
+      }
+      
+      .slider-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the full area without distortion */
+        transition: opacity 1s ease-in-out; /* Smooth transition when switching images */
+      }
+      
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .left {
+        left: 10px;
+      }
+      
+      .right {
+        right: 10px;
+      }
+      
+
+      .overlay1 {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        /* text-align: center; */
+        color: black;
+        background-color: rgb(255, 255, 255); /* Semi-transparent white background */
+        /* padding: 20px; */
+        width: 25%; /* Width of the overlay */
+      }
+      .overlay1 h2{
+        padding: 5px 20px 5px 20px ;
+        /* padding-left: 20px;
+        padding-right: 20px; */
+      }
+      .overlay1 p{
+        padding: 5px 20px 5px 20px ;
+      }
+      .overlay1 h3{
+        padding: 5px 20px 5px 20px ;
+      }
+      .overlay1 hr{
+        padding: 5px 20px 5px 20px ;
+        color: red;
+      }
+      .viewd{
+        color: white;
+        /* width: 400px; */
+        width: 100%;
+        background-color: red;
+        border-radius:0;
+        margin-top: 20px;
+        /* padding-top: 30px; */
+
+      }
+
+
+      .viewd:hover{
+        color: black;
+        background-color: white;
+      }
+
+
+
+
+.partners{
+    color: red;
+    padding: 50px;
+    margin-left: 50px;
+}
+
+
+  
+  /* .carousel-container {
+    position: relative;
+    width: 80vw;
+    overflow: hidden; 
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel img {
+    width: 10%; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Global Styles */
+
+  
+  .carousel-container {
+    position: relative;
+    width: 80vw; /* Adjust the width to control the visible area */
+    overflow: hidden; /* Hide the overflowing images */
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel img {
+    width: 25%; /* Each image takes up 25% of the container width */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+.main1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;  
+    padding: 50px 100px 50px 100px ;    
+}
+
+.map-container {
+    display: flex;                  
+    justify-content:flex-end;
+    align-items: center;
+
+}
+
+.modal-container1 {
+    flex: 1;                
+    padding: 20px;            
+    background-color: #001b94;;
+    border-radius: 8px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: right;
+
+}
+
+.modal-content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content1 h2{
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.modal-content1 p{
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#enquiry-form1 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    background-color:#001b94;;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+}
+input::placeholder,
+textarea::placeholder {
+    color: white;
+    opacity: 1; 
+}
+
+
+.modal-content1 button{
+    background-color: white;
+    color: red;
+}
+
+.main12{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.main12 div{
+    padding: 50px;
+}
+.main12 div p{
+    color: #001b94;
+}
+.main12 div h3{
+    padding: 20px 0 20px 0 ;
+    color: #001b94;
+}
+
+.main12 div h4{
+
+    color: #001b94;
+}
+.finallinks{
+    display: flex;
+    flex-direction: column;
+}
+.finallinks a{
+   text-decoration: none;
+   color: black;
+   color: #001b94;
+}
+
+.webstories{
+ color: red;
+ padding: 50px;
+
+}
+
+
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin-left: 5%;
+}
+
+.video {
+    width: 24%;  /* Adjust width for four videos */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    padding-left: 5%;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Hover effect to play videos */
+.video:hover {
+    transform: scale(1.05); /* Slightly enlarge the video when hovered */
+}
+
+
+.iconfont{
+
+    color: white;
+}
+
+
+  
+  .scroll-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding-left: 25px;
+    padding-right: 25px;
+
+  }
+
+  
+  .scroll-image {
+    width: 25%; /* Make each image take up 25% of the container width (4 visible images) */
+    object-fit: cover;
+    height: 300px;
+    padding: 90px;
+  }
+  
+  
