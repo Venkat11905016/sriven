@@ -94,11 +94,11 @@ const imageParagraph = document.getElementById('image-paragraph');
 
 // Function to update the image and text based on the index
 function updateImage() {
-  sliderImg.src = images[currentImageIndex].src;
-  imageTitle.textContent = images[currentImageIndex].title;
-  imageSubtitle.textContent = images[currentImageIndex].subtitle;
-  imageDescription.textContent = images[currentImageIndex].description;
-  imageParagraph.textContent = images[currentImageIndex].paragraph;
+  sliderImg.src = images[currentImageIndex]?.src;
+  imageTitle.textContent = images[currentImageIndex]?.title;
+  imageSubtitle.textContent = images[currentImageIndex]?.subtitle;
+  imageDescription.textContent = images[currentImageIndex]?.description;
+  // imageParagraph.textContent = images[currentImageIndex]?.paragraph;
 }
 
 // Function to go to the next image
