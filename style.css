@@ -59,6 +59,7 @@
 .modal {
     display: none;
     position: fixed;
+    /* position:absolute; */
     z-index: 1;
     left: 0;
     top: 0;
@@ -709,7 +710,7 @@ textarea::placeholder {
         display: none; /* Hide links initially */
         position: absolute;
         top: 60px;
-        left: 0;
+        /* left: 0; */
         right: 0;
         background-color: #fff;
         padding: 20px;
@@ -727,6 +728,7 @@ textarea::placeholder {
         display: flex;
         align-items: center;
         margin-top: 20px;
+        width: 40%;
          /* Show hamburger icon */
     }
 
@@ -801,9 +803,15 @@ textarea::placeholder {
         grid-template-columns: 1fr ;
         /* padding: 50px; */
         margin-top:100px ;
-        /* padding-top: 20px; */
+
     }
 
+    .modal-content{
+        margin-top: 200px;
+    }
+    .modal{
+        z-index: 20000;
+    }
 }
 
 @media (max-width: 480px) {

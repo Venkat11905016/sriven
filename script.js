@@ -33,6 +33,16 @@ document.getElementById("enquiry-form").onsubmit = function(event) {
 // });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.getElementById("hamburger-icon");
+  const navLeft = document.querySelector(".nav-left");
+
+  hamburger.addEventListener("click", function() {
+      navLeft.classList.toggle("active");
+  });
+});
+
+
 
 let currentImageIndex = 0;
 
